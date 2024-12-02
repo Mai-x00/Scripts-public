@@ -1,2 +1,2 @@
 # Scripts-public
-Various scripts, for various tasks, publicly accessible
+Various scripts and Executables, for various tasks, publicly accessible
