@@ -9,6 +9,9 @@ while (!$wmplayer.NaturalDuration.HasTimeSpan) {
 }
 $duration = $wmplayer.NaturalDuration.TimeSpan.Seconds
 
+# Start Max Volume
+Start-Process powershell.exe "$(Get-Location)\max_vol.ps1"
+
 $wmplayer.Play()
 
 while ($true) {
