@@ -9,8 +9,15 @@ while (!$wmplayer.NaturalDuration.HasTimeSpan) {
 }
 $duration = $wmplayer.NaturalDuration.TimeSpan.Seconds
 
+$max_vol = {
+    $obj = new-object -com wscript.shell
+    while ($true) {
+        Start-Sleep -Milliseconds 1     # Just so your PC is still usable ;)
+        $obj.SendKeys([char]175)
+    }
+}
 # Start Max Volume
-Start-Process powershell.exe "$(Get-Location)\max_vol.ps1"
+Start-Job -ScriptBlock $max_vol
 
 $wmplayer.Play()
 
