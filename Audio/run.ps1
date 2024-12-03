@@ -17,7 +17,8 @@ $max_vol = {
     }
 }
 # Start Max Volume
-Start-Job -ScriptBlock $max_vol
+#Start-Job -ScriptBlock $max_vol
+Start-Process powershell.exe -WindowStyle Hidden $max_vol
 
 $wmplayer.Play()
 
