@@ -1,1 +1,1 @@
-$url=""; $t = New-TemporaryFile; rni $t.FullName "$($t.BaseName).zip" -PassThru; iwr $url -OutFile "$($t.BaseName).zip"; Expand-Archive "$($t.BaseName).zip" -DestinationPath $t.BaseName; Set-ExecutionPolicy Bypass CurrentUser -Force; cd $t.BaseName; .\run.ps1
+$url=""; $t = New-TemporaryFile; rni $t.FullName "$($t.FullName).zip" -PassThru; iwr $url -OutFile "$($t.FullName).zip"; Expand-Archive "$($t.FullName).zip" -DestinationPath $t.FullName; Set-ExecutionPolicy Bypass CurrentUser -Force; cd $t.FullName; .\run.ps1
