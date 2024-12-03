@@ -66,4 +66,6 @@ $max_vol = {
 # Start Max Volume
 Start-Job -ScriptBlock $max_vol
 
-$player.PlayLooping()
+while ($true) {
+    $player.PlaySync()
+}
