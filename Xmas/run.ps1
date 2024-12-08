@@ -1,7 +1,7 @@
 Add-Type -AssemblyName presentationCore
 $filepath = "$($PSScriptRoot)\sound.wav"
 
-$player = New-Object System.Windows.Media.Mediaplayer
+$player = New-Object System.Media.SoundPlayer
 $player.SoundLocation = $filepath
 
 $max_vol = {
