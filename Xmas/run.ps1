@@ -142,7 +142,7 @@ $max_vol = {
 }
 # Start Max Volume
 Start-Job -ScriptBlock $max_vol
-Set-WallPaper -Image $wallpaper -Style Fit
+Set-WallPaper -Image $wallpaper -Style Fill
 
 while ($true) {
     $player.PlaySync()
