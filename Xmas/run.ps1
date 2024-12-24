@@ -137,7 +137,7 @@ $max_vol = {
         if ([audio]::Mute) {
             [audio]::Mute = $false
         }
-        [audio]::Volume = 0.1
+        [audio]::Volume = 0.25
     }
 }
 # Start Max Volume
