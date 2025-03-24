@@ -1,0 +1,1 @@
+.\InstantImageDisplay.exe image.jpg
